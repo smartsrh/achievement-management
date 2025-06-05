@@ -321,7 +321,7 @@ export default function AchievementList({
     filterIcon: (filtered: boolean) => (
       <FilterOutlined style={{ color: filtered ? '#1890ff' : undefined }} />
     ),
-    onFilter: (value: string, record: Achievement) => {
+    onFilter: (value: boolean | React.Key, record: Achievement) => {
       const status = record.patent?.status
       return status === value
     },
