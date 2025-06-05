@@ -1,0 +1,185 @@
+# ========================================
+# Node.js 核心忽略规则
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ========================================
+# Next.js 框架相关
+# ========================================
+.next/
+out/
+build/
+dist/
+.turbo/
+next-env.d.ts
+*.tsbuildinfo
+
+# ========================================
+# 环境变量和配置文件（安全相关）
+# ========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.key
+*.secret
+*.pem
+
+# ========================================
+# 敏感文档和配置指南（包含密码、密钥等）
+# ========================================
+入门操作指南.md
+deploy.md
+*操作指南*.md
+*部署指南*.md
+*配置指南*.md
+database-setup.md
+deployment-*.md
+setup-*.md
+*-credentials.md
+*-secrets.md
+config/*.md
+scripts/README.md
+
+# ========================================
+# 开发工具和编辑器配置
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# ========================================
+# 测试和调试相关
+# ========================================
+coverage/
+.nyc_output/
+*.log
+logs/
+.cache
+.parcel-cache
+.temp
+.tmp
+temp/
+tmp/
+scratch/
+playground/
+
+# ========================================
+# 备份和临时文件
+# ========================================
+*.backup
+*.bak
+*.orig
+*.rej
+*.swp
+*.tmp
+*~
+.#*
+\#*#
+
+# ========================================
+# 项目特定的开发文件
+# ========================================
+# 整个scripts文件夹（包含敏感数据库脚本）
+scripts/
+
+# app文件夹中的测试页面
+app/test-*/
+app/test-*
+
+# 其他开发过程中的测试脚本
+test-*.js
+*-test.js
+diagnose-*.js
+fix-*.js
+setup-*.js
+verify-*.js
+
+# 开发文档和笔记
+docs/dev/
+notes/
+TODO.md
+CHANGELOG.draft.md
+
+# 设计稿和原型文件
+design/
+mockups/
+wireframes/
+*.sketch
+*.fig
+*.psd
+*.xd
+
+# 本地开发数据
+db-local/
+uploads-local/
+test-data/
+sample-data/
+
+# SQL文件（包含敏感操作）
+*.sql
+migrations/*.sql
+database/*.sql
+
+# 开发过程中的说明文档（包含敏感信息）
+*修复说明*.md
+*升级说明*.md
+*测试说明*.md
+*字段*说明*.md
+*功能*说明*.md
+*总结*.md
+
+# ========================================
+# 部署和 CI/CD 相关
+# ========================================
+.vercel
+.serverless/
+.netlify/
+
+# ========================================
+# 操作系统生成文件
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ========================================
+# 运行时文件
+# ========================================
+*.pid
+*.seed
+*.pid.lock
+pids/
+
+# ========================================
+# 保留重要文件（取消忽略）
+# ========================================
+!README.md
+!package.json
+!next.config.js
+!tailwind.config.js
+!tsconfig.json
+!.env.example 
